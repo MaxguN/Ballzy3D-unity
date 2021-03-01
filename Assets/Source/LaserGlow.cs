@@ -27,7 +27,7 @@ public class LaserGlow : MonoBehaviour {
 			gameObject.AddComponent<MeshRenderer>();
 		}
 
-		m_mesh = GetComponent<MeshFilter>().mesh;
+		m_mesh = GetComponent<MeshFilter>().sharedMesh;
 		GenerateLaserMesh();
 
 		GetComponent<MeshRenderer>().materials = new Material[] { m_material };

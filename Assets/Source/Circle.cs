@@ -79,7 +79,7 @@ public class Circle : MonoBehaviour {
 	}
 
 	protected void GenerateCircleMesh(float angleStart, float angleEnd) {
-		Mesh mesh = GetComponent<MeshFilter>().mesh;
+		Mesh mesh = GetComponent<MeshFilter>().sharedMesh; // TODO check use of mesh vs sharedMesh
 		mesh.Clear();
 
 		if (angleEnd == angleStart) {

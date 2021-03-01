@@ -34,7 +34,7 @@ public class Wall : MonoBehaviour {
 	}
 
 	protected void GenerateRectangleMesh() {
-		Mesh mesh = GetComponent<MeshFilter>().mesh;
+		Mesh mesh = GetComponent<MeshFilter>().sharedMesh;
 		mesh.Clear();
 
 		int verticesLength = 12;
